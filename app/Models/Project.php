@@ -62,6 +62,10 @@ class Project extends Model
         'description',
         'headline',
         'url',
+        'sector',
+        'commercial',
+        'launch_date',
+        'layout',
     ];
 
     public $slugAttributes = [
@@ -74,6 +78,22 @@ class Project extends Model
                 [
                     'name' => 'default',
                     'ratio' => 12 / 9,
+                ],
+            ],
+        ],
+        'screengrab_tablet' => [
+            'default' => [
+                [
+                    'name' => 'default',
+                    'ratio' => 765 / 1024,
+                ],
+            ],
+        ],
+        'screengrab_phone' => [
+            'default' => [
+                [
+                    'name' => 'default',
+                    'ratio' => 375 / 667,
                 ],
             ],
         ],

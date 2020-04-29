@@ -101,4 +101,10 @@
 	'note' => 'Shown at a smartphone breakpoint.',
 	])
 </a17-fieldset>
+
+<a17-fieldset id="credits" title="Credits" :open="true">
+	@formField('repeater', [
+	'type' => 'credit',
+	])
+</a17-fieldset>
 @endsection

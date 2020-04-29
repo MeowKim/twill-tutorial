@@ -51,6 +51,16 @@ use A17\Twill\Models\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|\A17\Twill\Models\Model withTag($tags, $type = 'slug')
  * @method static \Illuminate\Database\Eloquent\Builder|\A17\Twill\Models\Model withoutTag($tags, $type = 'slug')
  * @mixin \Eloquent
+ * @property string|null $sector
+ * @property int $commercial
+ * @property string|null $launch_date
+ * @property string|null $layout
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Credit[] $credit
+ * @property-read int|null $credit_count
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Project whereCommercial($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Project whereLaunchDate($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Project whereLayout($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\Project whereSector($value)
  */
 class Project extends Model
 {
@@ -98,6 +108,12 @@ class Project extends Model
             ],
         ],
     ];
+
+    // Relationships
+    public function credit()
+    {
+        return $this->hasMany(Credit::class)->orderBy('position');
+    }
 
     // Mutators & Accessors
     public function getDomainAttribute($value)

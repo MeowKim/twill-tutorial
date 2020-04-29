@@ -54,5 +54,12 @@ return [
 				],
 			],
 		],
+		'repeaters' => [
+			'credit' => [
+				'title' => 'Credit',
+				'trigger' => 'Add credit',
+				'component' => 'a17-block-credit',
+			],
+		],
 	],
 ];

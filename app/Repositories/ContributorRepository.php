@@ -18,4 +18,12 @@ class ContributorRepository extends ModuleRepository
     {
         $this->model = $model;
     }
+
+    public function allContributors()
+    {
+        return $this->model
+            ->published()
+            ->orderBy('name')
+            ->get();
+    }
 }

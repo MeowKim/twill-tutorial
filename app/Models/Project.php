@@ -5,6 +5,7 @@ namespace App\Models;
 use A17\Twill\Models\Behaviors\HasSlug;
 use A17\Twill\Models\Behaviors\HasMedias;
 use A17\Twill\Models\Model;
+use App\Models\Presenters\ProjectPresenter;
 
 /**
  * App\Models\Project
@@ -65,6 +66,8 @@ use A17\Twill\Models\Model;
 class Project extends Model
 {
     use HasSlug, HasMedias;
+
+    public $presenter = ProjectPresenter::class;
 
     protected $fillable = [
         'published',

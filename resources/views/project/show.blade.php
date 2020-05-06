@@ -8,7 +8,8 @@
 
 <!-- COVER -->
 <div class="my-32 mx-12 py-32 px-12 bg-twill-grey-2">
-	<img src="{{ $project->image('screengrab_desktop', 'default', ['w'=>1200, 'fit'=>null]) }}"
+	<img class="w-10/12 lg:w-3/4 mx-auto"
+		src="{{ $project->image('screengrab_desktop', 'default', ['w'=>1200, 'fit'=>null]) }}"
 		alt="{{ $project->imageAltText('screengrab_desktop') }}">
 </div>
 
@@ -19,9 +20,16 @@
 		<div class="flex">
 			<div class="w-1/2">
 				<ul>
-					<li>Website: <a href="{{ $project->url }}" class="text-twill-purple">{{ $project->domain }}</a>
-					</li>
+					<li>Website: <a href="{{ $project->url }}" class="text-twill-purple">
+							{{ $project->domain }}</a></li>
 					<li>Released: TBD</li>
+				</ul>
+			</div>
+			<div class="w-1/2">
+				<ul>
+					@foreach ($project->present()->creditsFormatted as $creditItem)
+					<li>{!! $creditItem['roleTitle'].": ".$creditItem['contributorList'] !!}</li>
+					@endforeach
 				</ul>
 			</div>
 		</div>

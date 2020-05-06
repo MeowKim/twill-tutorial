@@ -36,7 +36,6 @@
 -   ### Questions
 
 > > why add unnecessary routes for credits at 4:29?  
-> > why override \$fields at 6:16?  
 > > contributor's names are disappeared when refresh after update?
 
 ## Displaying content (5/5)

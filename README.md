@@ -43,6 +43,6 @@
 
 -   ### Contents
 
-    How to present model in frontend
-    How to use presenter in frontend
-    How to use blade template component
+    How to display models in frontend.  
+    How to use presenter in frontend.  
+    How to use blade template component.

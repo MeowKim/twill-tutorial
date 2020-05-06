@@ -3,7 +3,7 @@
 @section('content')
 <!-- PROJECT SHOW -->
 <!-- HEADER -->
-<h1 class="mt-10 px-10 text5xl font-normal leading-normal text-center">{{ $project->title }}</h1>
+<h1 class="mt-10 px-10 text-5xl font-normal leading-normal text-center">{{ $project->title }}</h1>
 <h2 class="mt-2 px-10 text-base font-normal text-twill-grey text-center">{{ $project->headline }}</h2>
 
 <!-- COVER -->

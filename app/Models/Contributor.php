@@ -59,6 +59,8 @@ use App\Models\Presenters\ContributorPresenter;
  * @method static \Illuminate\Database\Eloquent\Builder|\A17\Twill\Models\Model withTag($tags, $type = 'slug')
  * @method static \Illuminate\Database\Eloquent\Builder|\A17\Twill\Models\Model withoutTag($tags, $type = 'slug')
  * @mixin \Eloquent
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Credit[] $credits
+ * @property-read int|null $credits_count
  */
 class Contributor extends Model
 {

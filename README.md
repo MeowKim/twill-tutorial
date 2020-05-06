@@ -21,7 +21,6 @@
 -   ### Questions
 
 > > how to apply style(css) like this video?  
-> > how to enable preview button when entering editor mode?  
 > > unknown error with @include('svgs.spotlight') in views/site/blocks/project_detail.blade.php?  
 > > how to debug when using twill?
 

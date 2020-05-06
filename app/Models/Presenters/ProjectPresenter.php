@@ -12,7 +12,7 @@ class ProjectPresenter extends Presenter
 			$linksList = [];
 
 			foreach ($credit->contributors as $contributor) {
-				$linksList[] = '<a class="text-twill-purple" href="/contributors/"' .
+				$linksList[] = '<a class="text-twill-purple" href="/contributors/' .
 					$contributor->slug . '">' . $contributor->name . '</a>';
 			}
 

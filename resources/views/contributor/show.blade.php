@@ -11,7 +11,7 @@
 		<img src="{{ $contributor->image('avatar', 'default', ['w'=>1200, 'fit'=>null]) }}"
 			alt="{{ $contributor->name }}">
 
-		<div class="lg:w-12 lg:pl-8 mt-8 lg:mg-0 flex flex-col justify-between">
+		<div class="lg:w-1/2 lg:pl-8 mt-8 lg:mg-0 flex flex-col justify-between">
 			@component('components.contributor.credits', compact('contributor'))
 			@endcomponent
 		</div>

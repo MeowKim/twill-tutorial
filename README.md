@@ -39,6 +39,10 @@
 > > why override \$fields at 6:16?  
 > > contributor's names are disappeared when refresh after update?
 
-## Displaying content
+## Displaying content (5/5)
 
-TODO
+-   ### Contents
+
+    How to present model in frontend
+    How to use presenter in frontend
+    How to use blade template component

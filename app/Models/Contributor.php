@@ -61,6 +61,7 @@ use App\Models\Presenters\ContributorPresenter;
  * @mixin \Eloquent
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Credit[] $credits
  * @property-read int|null $credits_count
+ * @property-read mixed $title_in_dashboard
  */
 class Contributor extends Model
 {

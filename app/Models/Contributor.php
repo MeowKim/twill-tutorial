@@ -102,4 +102,10 @@ class Contributor extends Model
     {
         return $this->belongsToMany(Credit::class);
     }
+
+    // Mutators & Accessors
+    public function getTitleInDashboardAttribute()
+    {
+        return $this->name;
+    }
 }

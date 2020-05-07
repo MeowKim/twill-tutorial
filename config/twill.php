@@ -1,6 +1,28 @@
 <?php
 
 return [
+	'dashboard' => [
+		'modules' => [
+			'App\Models\Project' => [
+				'name' => 'projects',
+				'count' => true,
+				'create' => true,
+				'activity' => true,
+				'draft' => true,
+				'search' => true,
+				'search_fields' => ['title'],
+			],
+			'App\Models\Contributor' => [
+				'name' => 'contributors',
+				'count' => true,
+				'create' => true,
+				'activity' => true,
+				'draft' => true,
+				'search' => true,
+				'search_fields' => ['name'],
+			],
+		],
+	],
 	'file_library' => [
 		'filesize_limit' => 10,
 		'allowed_extensions' => ['pdf'],
